@@ -1,0 +1,14 @@
+version: 0.0
+os: linux
+files:
+  - source: /
+    destination: /var/www/3.90.215.237/html/
+hooks:
+  BeforeInstall:
+    - location: /home/ubuntu/cleanup.sh
+      timeout: 300
+      runas: root
+  AfterInstall:
+    - location: /home/ubuntu/install.sh
+      timeout: 300
+      runas: root
