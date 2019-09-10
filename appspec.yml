@@ -3,7 +3,7 @@ os: linux
 files:
   - source: /
     destination: /var/www/3.90.215.237/html/
-hooks:
+#hooks:
   #BeforeInstall:
     #- location: /home/ubuntu/cleanup.sh
     #  timeout: 300
